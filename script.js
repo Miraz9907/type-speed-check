@@ -47,6 +47,7 @@ const typeController = (e) => {
   } else {
     errorCount++;
     display.innerHTML += `<span class="red">${newLetter === " " ? "▪" : newLetter}</span>`;
+    // console.log(errorCount);
   }
 
   // check if given question text is equal to user typed text
@@ -111,7 +112,7 @@ const start = () => {
 
   const startCountdown = setInterval(() => {
     countdownOverlay.innerHTML = `<h1>${count}</h1>`;
-    console.log(count);
+    // console.log(count);
     
 
     // finished timer
